@@ -3,7 +3,11 @@ from django.shortcuts import render, redirect
 
 
 def index(request):
-    return HttpResponse("привет чувак")
+    return render(request, 'company/index.html')
+
+
+def about(request):
+    return render(request, 'company/about.html')
 
 
 def categories(request, catid):
